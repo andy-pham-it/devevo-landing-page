@@ -91,3 +91,111 @@
 
         .btn-playstore:hover {
             transform: translateY(-2px);
+            background-color: #E2E8F0;
+        }
+
+        .btn-playstore svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            padding: 40px 0 80px 0;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #60A5FA;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 32px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">DevEvo.</div>
+            <a href="mailto:phamlehoaian@gmail.com" style="color: var(--text-muted); text-decoration: none; font-size: 14px;">Support</a>
+        </header>
+
+        <section class="hero">
+            <h1>Crack Your Tech Interview. <br>Land the Dream Job.</h1>
+            <p>The ultimate pocket guide for software engineers. Master coding concepts, review system design cheat sheets, and build your daily learning habit.</p>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.phamlehoaian.devevo" target="_blank" class="btn-playstore">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M5 2.5a1.5 1.5 0 0 0-1.5 1.5v16a1.5 1.5 0 0 0 1.5 1.5l14-9a1.5 1.5 0 0 0 0-2.5l-14-9z"/>
+                </svg>
+                Get it on Google Play
+            </a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>🧠 Tech Quizzes</h3>
+                <p>Challenge yourself with high-quality questions covering OOP, Data Structures, System Design, and specific frameworks.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📚 Cheat Sheets</h3>
+                <p>Quickly review core concepts before stepping into the interview room. Access data securely via our cloud-synced architecture.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌙 Built for Devs</h3>
+                <p>Gorgeous Dark Mode interface, offline-first capabilities, and daily motivation reminders to keep your streak alive.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Pham Le Hoai An. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="/app-ads.txt" target="_blank">app-ads.txt</a> | 
+                Contact: <a href="mailto:phamlehoaian@gmail.com">phamlehoaian@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
